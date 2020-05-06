@@ -22,7 +22,9 @@ Digit:
 		0|1|...|9
 
 ## How to Compile this Program?
-  Javac Main.java
+  Javac Main.java from the terminal
 ## How to run this Program?
   Java Main
+## How to run with different input?
+  Modify the input.txt file then recompile.
 
