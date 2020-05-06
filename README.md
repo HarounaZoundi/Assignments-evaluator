@@ -25,8 +25,10 @@ Digit:<br>
   ###On terminal: Javac Main.java<br>
   ###Using makefile: make
 ## How to run this Program?
-   ###On terminal: Java Main<br>
-   ###Using makefile: make run
+###On terminal: 
+  Java Main<br>
+###Using makefile: 
+make run
 ## How to run with different input?
   Modify the input.txt file then recompile.
 
