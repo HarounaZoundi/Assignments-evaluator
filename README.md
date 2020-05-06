@@ -27,7 +27,7 @@ Digit:<br>
 ## How to run this Program?
   On terminal: 
   Java Main<br>
-###Using makefile: 
+ Using makefile: 
    make run
 ## How to run with different input?
   Modify the input.txt file then recompile.
