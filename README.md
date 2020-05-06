@@ -22,10 +22,10 @@ Digit:<br>
 		0|1|...|9
 
 ## How to Compile this Program?
-  ###On terminal: Javac Main.java
+  ###On terminal: Javac Main.java<br>
   ###Using makefile: make
 ## How to run this Program?
-   ###On terminal: Java Main
+   ###On terminal: Java Main<br>
    ###Using makefile: make run
 ## How to run with different input?
   Modify the input.txt file then recompile.
