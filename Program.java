@@ -1,9 +1,16 @@
+/**
+   This program takes a string and create an instance of an assignment class
+   This program also store assignments into an arraylist of assignments.
+*/
 import java.util.ArrayList;
 
 public class Program {
 
    static private ArrayList<Assignment> assignments = new ArrayList<>() ;
-   
+   /*
+      Before we store a new assignment, we check if in the arrayList contains 
+      the same identifier we replace this assignment by the new assignment
+   */
    public void newAssignment(String str){
       Assignment newAssign = new Assignment(str);
       boolean status = false;
@@ -19,6 +26,7 @@ public class Program {
          assignments.add(newAssign);
       }
    }
+   //given an identifier, this function return the corresponding expression if it exist in the list
    public static int getExpression(String identifier){
       int x=0;
       if(assignments.size()> 0){

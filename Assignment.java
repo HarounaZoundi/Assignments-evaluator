@@ -1,23 +1,29 @@
+/*
+
+   This class accepts a string, validated then split into two which:
+   The left part is the Identifier
+   The right part is the expression
+*/
 class Assignment{
    private String s;
    private Identifier identifier;
    private ExpEvaluator expression; 
 
-
    public Assignment(String s){
       this.s = s;
       validAssigment();
    }
+
    void validAssigment(){
-      //System.out.println(" in valid before if" );
       if(s.endsWith(";") && s.contains("=")){
          String[] array = s.split("=");
          
          if(array.length == 2){
-            //System.out.println(array[0] + "\n" + array[1] );
+            // Create an instance if Identifier class
             identifier = new Identifier(array[0].trim());
            
             String str = array[1].replace(";", "");
+            //create an instance of ExpEvalutor class
             expression = new ExpEvaluator(str.trim());
          }
          else{
@@ -29,6 +35,7 @@ class Assignment{
       }
     
    }
+   // 
    String getIdentifier(){
       if(identifier.isValidIdentifier()){
          return identifier.getIdentifier();
@@ -40,7 +47,6 @@ class Assignment{
       
    }
    int getExpression(){
-   //problem is here
       return expression.eval();
    }
    int getExpValue(){

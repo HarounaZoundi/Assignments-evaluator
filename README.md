@@ -21,6 +21,20 @@ NonZeroDigit:<br>
 Digit:<br>
 		0|1|...|9
 
+## Stucture of the project
+    class Project{
+      list of Assignments;
+    }
+    class Assignment{
+      1 Identifier;
+      1 Expression;
+    }
+    class Identifier{
+       validate and return 1 identifier;
+    }
+    class ExpEvalutor{
+      validate and return 1 expression;
+    }
 ## How to Compile this Program?
   On terminal: Javac Main.java<br>
   Using makefile: make
@@ -30,5 +44,5 @@ Digit:<br>
  Using makefile: 
    make run
 ## How to run with different input?
-  Modify the input.txt file then recompile.
+  Modify the input.txt file then run again.
 

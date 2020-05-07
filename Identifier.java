@@ -1,3 +1,6 @@
+/*
+   This class take a string and validate as an identifier
+*/
 import java.util.regex.*; 
 public class Identifier{
    private String s;
@@ -11,6 +14,7 @@ public class Identifier{
       return Pattern.matches(pattern, s);
    
    }
+   
    String getIdentifier(){
       if(isValidIdentifier()){
          return s;

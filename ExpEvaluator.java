@@ -33,7 +33,6 @@ public class ExpEvaluator {
       }
    }
    int getExpression(){
-      //System.out.println("in exp-getexp"+expValue);
       return expValue;
    }
    int eval(){
@@ -91,15 +90,13 @@ public class ExpEvaluator {
          x= factor();
          return x;
       }
-      // if currnt char is digit it might be a literal
+      // if current char is digit it might be a literal
       else if(Character.isDigit(inputToken)){
          x= literal();
-        
          return x;
       }
       // if current char is a letter or '_' it might be an identifier
       else if(Character.isLetter(inputToken) || inputToken == '_'){
-         
          x =getValue();
          
          return x;
@@ -112,7 +109,7 @@ public class ExpEvaluator {
       
       
    }
-   
+   //This function accumlated digits and return the corresponding integer
    int literal(){
       String str= "";
       String patern = "0|^[1-9]\\d*";
