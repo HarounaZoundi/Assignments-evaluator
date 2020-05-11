@@ -40,7 +40,7 @@ Digit:<br>
   Using makefile: make
 ## How to run this Program?
   On terminal: 
-  Java Main<br>
+  Java Main input.txt<br>
  Using makefile: 
    make run
 ## How to run with different input?

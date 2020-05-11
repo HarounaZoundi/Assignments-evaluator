@@ -21,7 +21,7 @@ Program.class: Program.java
 
 Main.class: Main.java
 	$(JCC) $(JFLAGS) Main.java
-run: Main.class
-	$(JC) Main.class
+run: Main.class input.txt
+	$(JC) Main.class input.txt
 clean: 
 	$(RM) *.class

@@ -3,7 +3,7 @@ import java.util.Scanner; // Import the Scanner class to read text files
 public class Main {
 
    public static void main(String[] args)throws IOException {
-      File myObj = new File("input.txt");
+      File myObj = new File(args[0]);
       Scanner myReader = new Scanner(myObj);
       Program program = new Program();
          
